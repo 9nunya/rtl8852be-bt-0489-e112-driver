@@ -19,6 +19,17 @@ This repository provides a backported/patched version of `btusb.c` that correctl
 
 ## Installation
 
+### Arch Linux (AUR)
+
+This package is available in the AUR as `rtl8851be-bt-foxconn-dkms`.
+This is the recommended method as it uses DKMS to survive kernel updates.
+
+```bash
+yay -S rtl8851be-bt-foxconn-dkms
+```
+
+### Manual Installation
+
 1.  **Dependencies:** Ensure you have `make`, `gcc`, and your kernel headers installed.
     - Arch: `sudo pacman -S linux-headers base-devel`
     - Debian/Ubuntu: `sudo apt install linux-headers-$(uname -r) build-essential`
